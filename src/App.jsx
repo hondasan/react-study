@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import ColofulMessage from "./components/ColorfulMessage";
+//import ColofulMessage from "./components/ColorfulMessage";
+import { ColorfulMessage } from "./components/ColorfulMessage";
 
 const App = () => {
   const [num, setNum] = useState(0);
@@ -26,8 +27,8 @@ const App = () => {
   return (
     <>
       <h1 style={{ color: "red" }}>こんばんわ</h1>
-      <ColofulMessage color="blue">お元気ですか？</ColofulMessage>
-      <ColofulMessage color="pink">元気です?</ColofulMessage>
+      <ColorfulMessage color="blue">お元気ですか？</ColorfulMessage>
+      <ColorfulMessage color="pink">元気です?</ColorfulMessage>
       <button onClick={onClickCountUp}>カウントアップ</button>
       <br />
       <button onClick={onClickSwitchShowFlag}>on/off</button>
